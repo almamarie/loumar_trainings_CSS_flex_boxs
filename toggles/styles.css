@@ -1,0 +1,70 @@
+body{
+     background-color: #4678F3;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.container{
+    display: flex;
+    gap: 20px;
+}
+
+.toggle {
+    width: 250px;
+    height: 150px;
+
+    border-radius: 10px;
+    padding: 20px 15px 20px 20px;
+    background-color: #fff;
+    
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: flex-end;
+    position: relative;
+
+    opacity: .5;
+    transition: all .5s linear;
+}
+
+.toggle:hover{
+    transform: scale(1.1);
+    opacity: .7;
+}
+
+.toggle-active, .toggle-active:hover{
+    opacity: 1;
+}
+
+.tick{
+    width: 15px;
+    height: 15px;
+
+    border-radius: 50%;
+
+    position: absolute;
+    right: 20px;
+    top: 20px;
+
+    border: 2px solid #64D6EE;
+}
+
+.digit{
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.size{
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.hr{
+    width: 100%;
+    height: 5px;
+    background-color: #64D6EE;
+}
